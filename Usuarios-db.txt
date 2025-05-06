@@ -1,24 +1,6 @@
-Servidor SURATICA:
-	user = "postgres"
-	password = "3204119316caro"
-	host = "localhost"
-	port = "5432"
-	database = "prueba"
-.env:
-	DATABASE_URL=postgresql://postgres:3204119316caro@localhost:5432/prueba
-	NODE_ENV=development
-	PORT=4000
-
-Servidor propio:
-	user = "postgres"
-	password = "1123860023Stocken"
-	host = "localhost"
-	port = "5432"
-	database = "Prueba"
-.env:
-	DATABASE_URL=postgresql://postgres:1123860023Stocken@localhost:5432/Prueba
-	NODE_ENV=development
-	PORT=4000	
-
+POSTGRES_USER: postgres
+POSTGRES_PASSWORD: 1123860023stocken
+POSTGRES_DB: stocken	
+POSTGRE_PORT: 5432
 
 usuario de prueba: m1Cl@v3Secr3t4!2025
