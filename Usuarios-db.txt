@@ -19,3 +19,6 @@ Servidor propio:
 	DATABASE_URL=postgresql://postgres:1123860023Stocken@localhost:5432/Prueba
 	NODE_ENV=development
 	PORT=4000	
+
+
+usuario de prueba: m1Cl@v3Secr3t4!2025
