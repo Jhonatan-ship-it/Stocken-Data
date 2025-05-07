@@ -4,3 +4,22 @@ POSTGRES_DB: stocken
 POSTGRE_PORT: 5432
 
 usuario de prueba: m1Cl@v3Secr3t4!2025
+
+
+Crear tablas de usuarios y productos:
+
+CREATE TABLE users (
+  id SERIAL PRIMARY KEY,
+  name TEXT,
+  email TEXT UNIQUE,
+  password TEXT
+);
+
+CREATE TABLE productos (
+  id SERIAL PRIMARY KEY,
+  usuario_id INTEGER REFERENCES users(id),
+  nombre TEXT,
+  precio NUMERIC,
+  stock INTEGER,
+  caracteristicas JSONB
+);
