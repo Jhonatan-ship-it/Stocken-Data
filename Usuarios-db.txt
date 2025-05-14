@@ -23,3 +23,14 @@ CREATE TABLE productos (
   stock INTEGER,
   caracteristicas JSONB
 );
+
+Se ha creado un archivo init.sql, para crear las respectivas tablas cada vez que se levante el Docker, para poder navegar a través de la terminal hacia estas tablas se ejecutan los siguientes comandos:
+
+- Lo primero será enlista la lista de contenedores para obtener el de nuestra bd:
+	docker ps
+- Una vez obtenido el contenedor utilizaremos su nombre para entrar en el:
+	docker exec -it nombre-contenedor psql -U usuario -d basededatos
+- Ver tablas:
+	\dt
+- Ver estructura de la tabla:
+	\d nombre-de-tabla
